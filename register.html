@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Create Account</title>
+    <style>
+	body{
+	     margin:0;
+	     text-align: center;
+	     background-image: url('key_wallpaper.jpg');
+	     background-size: cover;
+	     background-position: center;
+	     margin-top: 325px;
+	     background-attachment: fixed;
+	     color: white;
+	     font-family: Courier;
+	    }
+	a{
+	     color: white;
+	 }
+	a:hover {
+	     font-weight: bold;
+	 }
+    </style>
+</head>
+<body>
+         <h2>create account</h2>
+         <form action="register.php" method="POST">
+             <label>username:</label>
+             <input type="text" name="username" required><br><br>
+
+             <label>password:</label>
+             <input type="password" name="password" required><br><br>
+
+             <button type="submit">create account</button>
+         </form>
+	 <br>
+	 <br>
+	 <br>
+         <a href="login.html">login</a>
+         <br>
+         <a href="index.html">back to home page</a>
+</body>
+</html>

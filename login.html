@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Log In</title>
+    <style>
+	body{
+	     margin: 0;
+	     text-align: center;
+	     background-image: url('background.jpg');
+	     background-size: cover;
+	     background-position: center;
+	     background-attachment: fixed;
+	     margin-top: 230px;
+	     color: black;
+	     font-family: Courier;
+	    }
+	.login-container {
+             background-color: white; /* White box */
+             max-width: 350px;
+             margin: 100px auto; /* Center vertically & horizontally */
+             padding: 20px;
+             border-radius: 10px; /* Rounded corners */
+             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Shadow effect */
+            }
+	a{
+	     color: black;
+	 }
+	a:hover {
+	     font-weight: bold;
+         }
+    </style>
+</head>
+<body>
+<div class="login-container">
+         <h2>log in</h2>
+         <form action="login.php" method="POST">
+             <label>username:</label>
+             <input type="text" name="username" required>
+	     <br>
+	     <br>
+             <label>password:</label>
+             <input type="password" name="password" required>
+	     <br>
+	     <br>
+             <button type="submit">log in</button>
+         </form>
+         <br>
+	 <br>
+	 <br>
+         <a href="register.html">create an account</a>
+         <br>
+         <a href="index.html">back to home page</a>
+</div>
+</body>
+</html>
