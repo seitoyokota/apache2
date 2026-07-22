@@ -121,7 +121,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             const container = document.getElementById('column_fields');
             container.innerHTML = '';
 	    if (count > 10) {
-		alert("Too many columns nick");
+		alert("Too many columns");
 		return;
 	    }
             for (let i = 0; i < count; i++) {

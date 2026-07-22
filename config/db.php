@@ -1,8 +1,8 @@
 <?php
 $host = 'localhost';
-$db   = 'notesapp';
-$dbUser = 'seitoyokota';
-$dbPass = 'Sy-01525315253!';
+$db   = 'example_database';
+$dbUser = 'example_username';
+$dbPass = 'example_password';
 
 try {
     $pdo = new PDO("mysql:host=$host;dbname=$db;charset=utf8mb4", $dbUser, $dbPass);

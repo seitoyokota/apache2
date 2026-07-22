@@ -1,0 +1,12 @@
+*
+!*/
+!*.php
+!*.html
+!*.css
+!*.js
+!README.md
+!.gitignore
+config.php
+db_config.php
+*.sql
+*.log

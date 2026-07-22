@@ -7,28 +7,28 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     //checking if its empty or invalid
     if (empty($username) || empty($password)) {
-        die("<p>Username and password cannot be empty.</p> <img src='videoplayback.gif' alt='Error' style='height:100%; width:100%'>");
+        die("<p>Username and password cannot be empty.</p>");
     }
     if (strlen($username) > 50) {
 	die("Username is too long. The maximum is 50 characters.");
     }
     //checks for password length
     if (strlen($password) < 15) {
-        die("<p>Invalid password: make sure password includes at least 15 characters, 1 letter, 1 number, and 1 special character.</p><img src='videoplayback.gif' alt='Error' style='height:100%; width:100%'><audio autoplay loop><source src='icecream.mp4' type='audio/mpeg'></audio>");
+        die("<p>Invalid password: make sure password includes at least 15 characters, 1 letter, 1 number, and 1 special character.</p>");
     }
     //checks for at least one letter
     if (!preg_match('/[A-Za-z]/', $password)) {
-        die("<p>Invalid password: make sure password includes at least 15 characters, 1 letter, 1 number, and 1 special character.</p><img src='videoplayback.gif' alt='Error' style='height:100%; width:100%'><audio autoplay loop><source src='icecream.mp4' type='audio/mpeg'></audio>");
+        die("<p>Invalid password: make sure password includes at least 15 characters, 1 letter, 1 number, and 1 special character.</p>");
     }
 
     //checks for at least one digit
     if (!preg_match('/\d/', $password)) {
-        die("<p>Invalid password: make sure password includes at least 15 characters, 1 letter, 1 number, and 1 special character.</p><img src='videoplayback.gif' alt='Error' style='height:100%; width:100%'><audio autoplay loop><source src='icecream.mp4' type='audio/mpeg'></audio>");
+        die("<p>Invalid password: make sure password includes at least 15 characters, 1 letter, 1 number, and 1 special character.</p>");
     }
 
     //checks for at least one special character
     if (!preg_match('/[^A-Za-z0-9]/', $password)) {
-        die("<p>Invalid password: make sure password includes at least 15 characters, 1 letter, 1 number, and 1 special character.</p><img src='videoplayback.gif' alt='Error' style='height:100%; width:100%'><audio autoplay loop><source src='icecream.mp4' type='audio/mpeg'></audio>");
+        die("<p>Invalid password: make sure password includes at least 15 characters, 1 letter, 1 number, and 1 special character.</p>");
     }
     if (strlen($password) > 255) {
         die("Password is too long. The maximum is 255 characters.");
